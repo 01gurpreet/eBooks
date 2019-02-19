@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_root_layout"
+        android:background="@color/white">
+
+
+
+    <FrameLayout
+            android:layout_above="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!--viewpager used-->
+
+
+        <androidx.viewpager.widget.ViewPager
+
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <!--circleindicator used-->
+
+        <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/view"
+                android:layout_gravity="bottom"
+                app:ci_drawable="@drawable/ic_circular_shape_selected"
+                app:ci_drawable_unselected="@drawable/ic_circular_shape_unselected"
+        />
+
+
+    </FrameLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginLeft="26.3dp"
+            android:layout_marginRight="26.3dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_above="@+id/bottom_txt"
+            app:cardCornerRadius="3dp">
+
+        <LinearLayout
+                android:id="@+id/btnLoginGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/googleicon"/>
+
+            <com.google.android.gms.common.SignInButton
+                    android:id="@+id/googleLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.0165"
+                    android:textColor="@color/txt_color"
+                    android:text="@string/connect_with_googlee"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/bottom_txt"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:text="@string/by_clicking_i_agree_to_terms_and_service"
+            android:textSize="13.3sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15sp"
+            android:gravity="center"/>
+
+</RelativeLayout>

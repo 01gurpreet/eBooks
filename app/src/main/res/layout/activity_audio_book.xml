@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".ui.activities.AudioBookActivity">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+        <ImageView
+                android:id="@+id/imageMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/the_dreaming"
+                android:scaleType="fitXY"/>
+
+        <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_back"/>
+
+
+        <ImageView
+                android:id="@+id/subImage"
+                android:layout_width="124.7dp"
+                android:layout_height="185.7dp"
+                android:layout_gravity="center"
+                android:src="@drawable/the_dreaming"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="16.7sp"
+                android:orientation="vertical">
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/bookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18.3sp"
+                    android:textColor="@color/white"
+                    android:text="The Dreaming Reality"
+                    android:layout_gravity="center"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Light
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chapter 1: Introduction"
+                    android:textColor="@color/white"
+                    android:textSize="13.3sp"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#6c7581"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="27.3dp"
+            android:text="02% completed - 15 hrs 20 min left"/>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:splitTrack="false"
+                    android:layout_marginBottom="3dp"
+                    android:thumbTint="#00000000" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Medium
+                        android:id="@+id/seekBarHint"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#6c7581"
+                        android:textSize="11.5sp"
+                />
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00"
+                        android:visibility="gone"
+                        android:textColor="#6c7581"
+                        android:textSize="11.5sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                        android:id="@+id/backward"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        app:srcCompat="@drawable/ic_10_back"/>
+
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="16.7sp"
+                        android:textColor="#6c7581"
+                        android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/play_audi_file"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/playimage"
+                android:layout_width="78.3dp"
+                android:layout_height="78.3dp"
+                app:srcCompat="@drawable/ic_play_button"/>
+           <!-- <ImageView
+                    android:id="@+id/pauseimage"
+                    android:layout_width="78.3dp"
+                    android:layout_height="78.3dp"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_circular_shape_unselected"
+                    app:srcCompat="@mipmap/ic_pause"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        app:srcCompat="@drawable/ic_10_frwd"/>
+
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                        android:id="@+id/forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="16.7sp"
+                        android:textColor="#6c7581"
+                        android:layout_gravity="center"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/speed_play"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="22.3dp"
+                    app:srcCompat="@drawable/ic_speed"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:textSize="11.7sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#6c7581"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="22.3dp"
+                    app:srcCompat="@drawable/ic_chapter"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chapters"
+                    android:textSize="11.7sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#6c7581"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="21dp"
+                    app:srcCompat="@drawable/ic_detail"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textSize="11.7sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#6c7581"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E-Books New</string>
+
+    <string name="by_clicking_i_agree_to_terms_and_service">By clicking, I agree to Terms and Service.</string>
+    <string name="connect_with_googlee">Connect with Google</string>
+    <string name="_1000_authors_free_download_offline_reading">1000+ Authors, Free \ndownload, Offline reading</string>
+    <string name="the_dreaming_reality">The Dreaming \nReality</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="MyLibrary">My Library</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search Books</string>
+
+</resources>

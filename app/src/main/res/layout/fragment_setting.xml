@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18.3dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/men"/>
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18.3sp"
+                android:text="Ralph Ray"
+                android:textColor="#394556"
+                android:textSize="23.3sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/helpcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="25.8dp"
+            android:orientation="horizontal">
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Help Center"
+                android:textColor="#394556"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_help"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A979797"/>
+
+
+    <LinearLayout
+            android:id="@+id/rateus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="25.8dp"
+            android:orientation="horizontal">
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rate us Five"
+                android:textColor="#394556"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_star1"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A979797"/>
+
+    <LinearLayout
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="25.8dp"
+            android:orientation="horizontal">
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Follow us on Facebook"
+                android:textColor="#394556"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_facebook"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A979797"/>
+
+    <LinearLayout
+            android:id="@+id/share_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="25.8dp"
+            android:orientation="horizontal">
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Share with Friends"
+                android:textColor="#394556"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_share1"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A979797"/>
+
+    <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="25.8dp"
+            android:orientation="horizontal">
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Log out"
+                android:textColor="#394556"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="10dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_logout"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A979797"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

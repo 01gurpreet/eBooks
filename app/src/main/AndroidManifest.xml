@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kinfoitsolutions.e_booksnew">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.NETWORK"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <application
+            android:name="com.drivingschool.android.ApplicationClass"
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ui.activities.DefaultActivity">
+        </activity>
+        <activity android:name=".ui.activities.AudioBookActivity">
+        </activity>
+        <activity android:name=".ui.activities.CheckBoxActivity">
+        </activity>
+        <activity
+                android:name=".ui.activities.BookDetailActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.BookReadActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.HelpActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.BookListActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ui.activities.HomeActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.LoginActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ui.activities.EbooksFilterActivity"
+                android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/homeFragContainer"
+        tools:context=".ui.fragments.HomeFragment">
+
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:src="@drawable/banner"
+                android:layout_margin="11.7dp"
+                android:scaleType="centerCrop"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginTop="11.6dp"
+                android:orientation="horizontal">
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.TextViewGiorgiabold
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_color"
+                    android:textSize="16.7sp"
+                    android:text="Recommend"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/viewAllRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textSize="13.3sp"
+                    android:textColor="@color/sky_blue"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="13.3dp"
+                android:paddingLeft="16.7dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/recommanded_recyclerview"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginTop="23.3dp"
+                android:orientation="horizontal">
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.TextViewGiorgiabold
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_color"
+                    android:textSize="16.7sp"
+                    android:text="Today’s Top 50 Books"/>
+
+
+            <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                    android:id="@+id/viewAllToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textSize="13.3sp"
+                    android:textColor="@color/sky_blue"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="13.3dp"
+                android:paddingLeft="16.7dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/top50_books_recyclerview"/>
+
+
+    </LinearLayout>
+

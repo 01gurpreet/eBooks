@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+        <ImageView
+                android:id="@+id/backArrowHelp"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/ic_back"/>
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.TextViewGiorgiabold
+                android:id="@+id/toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/backArrowHelp"
+                android:text="Help &amp; Support"
+        />
+
+
+        <com.kinfoitsolutions.e_booksnew.customfonts.TextViewGiorgia
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_color"
+                android:layout_marginRight="15sp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

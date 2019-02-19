@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="97.8dp"
+                    android:layout_height="146dp"
+                    android:src="@drawable/men"/>
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blink: The Power of Thinking
+Without Thinking"
+                        android:textSize="15sp"
+                        android:textColor="@color/txt_color"/>
+
+
+                <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                            android:id="@+id/circle_progress"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            app:cpb_background_progressbar_color="#FFCDD2"
+                            app:cpb_background_progressbar_width="3dp"
+                            app:cpb_progressbar_color="#F44336"
+                            app:cpb_progressbar_width="7dp"/>
+
+                    <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#828282"
+                            android:textSize="12sp"
+                            android:text="65%"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+                    <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#828282"
+                            android:textSize="8sp"
+                            android:layout_marginTop="5dp"
+                            android:text="Complete"
+                            android:gravity="center"
+                            android:layout_gravity="center"/>
+
+
+                </FrameLayout>
+
+
+                <com.kinfoitsolutions.e_booksnew.customfonts.MyTextView_Roboto_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malcolm Gladwell"
+                        android:textSize="11.7sp"
+                        android:letterSpacing="0.0165"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#a0a7b0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.7dp"
+                android:layout_marginRight="16.6dp"
+                android:layout_marginLeft="16.6dp"
+
+                android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/library_books_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
